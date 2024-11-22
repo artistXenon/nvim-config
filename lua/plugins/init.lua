@@ -4,6 +4,35 @@ return {
     -- event = 'BufWritePre', -- uncomment for format on save
     opts = require "configs.conform",
   },
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = require("configs.todo-comments"),
+    lazy = false,
+  },
+  {
+  	"nvim-treesitter/nvim-treesitter",
+  	opts = {
+  		ensure_installed = {
+  			"vim", "lua", "vimdoc",
+       "html", "css"
+  		},
+  	},
+  },
+  {
+    "nvim-tree/nvim-tree.lua",
+    config = function()
+      local nvim_tree = require("nvim-tree")
+      nvim_tree.setup {
+        actions = {
+          open_file = { resize_window = false }
+        },
+        update_focused_file = {
+          enable = true
+        }
+      }
+    end,
+  },
 
   -- These are some examples, uncomment them if you want to see them work!
   {
@@ -17,6 +46,7 @@ return {
   },
   {
     "kdheepak/lazygit.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
     lazy = true,
     cmd = {
         "LazyGit",
@@ -32,13 +62,4 @@ return {
   -- {
   --   "RRethy/vim-illuminate",
   -- }
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
 }

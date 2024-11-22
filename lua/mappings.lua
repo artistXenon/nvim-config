@@ -8,6 +8,7 @@ local smart_splits = require('smart-splits')
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("n", "<leader>q", "<cmd>q!<cr>", { desc = "quit window" })
 
+-- todo: MAPPINGS FOR SMART-SPLITS
 map('n', '<C-Left>', smart_splits.resize_left)
 map('n', '<C-Down>', smart_splits.resize_down)
 map('n', '<C-Up>', smart_splits.resize_up)

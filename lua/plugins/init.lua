@@ -73,10 +73,14 @@ return {
         "LazyGitFilter",
         "LazyGitFilterCurrentFile",
     },
-    keys = {
+      keys = {
         { "<leader>gg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
     }
-  }
+  },
+  -- {
+  --   "mg979/vim-visual-multi",
+  --
+  -- }
   -- {
   --   "RRethy/vim-illuminate",
   -- }

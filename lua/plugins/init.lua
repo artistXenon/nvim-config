@@ -35,7 +35,10 @@ return {
     config = function()
       local nvim_tree = require("nvim-tree")
       nvim_tree.setup {
-        actions = { open_file = { resize_window = false } },
+        actions = {
+          open_file = { resize_window = false },
+          change_dir = { global = true },
+        },
         update_focused_file = { enable = true },
 
         on_attach = function(bufnr)

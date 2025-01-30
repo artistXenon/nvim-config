@@ -6,13 +6,14 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark"
+	theme = "onedark",
   -- doomchad everforest github_dark onedark
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
 	-- 	["@comment"] = { italic = true },
 	-- },
+  transparency = true
 }
 
 M.ui = {

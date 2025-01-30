@@ -26,6 +26,6 @@ map('n', '|', "<C-w>v", { desc = "window split vertical" })
 map('n', '\\', "<C-w>s", { desc = "window split horizontal" })
 
 -- map("n", "<leader>qw", ":wq<cr>", { desc = "save and quit window" })
-map("i", "jk", "<ESC>")
+-- map("i", "jk", "<ESC>")
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

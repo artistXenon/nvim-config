@@ -27,6 +27,9 @@ return {
         actions = {
           open_file = { resize_window = false }
         },
+        git = {
+          ignore = false,
+        },
       }
     end,
   },
